@@ -1,0 +1,8 @@
+main: pl.profmc.betterautomessages.AutoMessage
+name: BetterAutoMessages
+version: 2.2
+author: ProfKrzys
+description: AutoMessage plugin
+api-version: 1.17
+
+

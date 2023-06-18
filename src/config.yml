@@ -1,0 +1,7 @@
+delay: 60
+
+messages:
+  - "&cThis is test message nr.1! Set in config.yml"
+  - "&bThis is test message nr.2! Set in config.yml"
+  - "&7This is test message nr.3! Set in config.yml"
+
