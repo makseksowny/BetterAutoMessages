@@ -1,0 +1,2 @@
+# BetterAutoMessages
+BetterAutoMessages SRC
