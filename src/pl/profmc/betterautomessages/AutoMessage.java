@@ -17,19 +17,6 @@ public class AutoMessage extends JavaPlugin {
     public void onEnable() {
         saveDefaultConfig();
         loadConfig();
-
-        new UpdateChecker(this, 110559).getVersion(version -> {
-                    if (this.getDescription().getVersion().equals(version)) {
-                        getLogger().warning("There is not a new update available.");
-                    } else {
-                        getLogger().warning("There is a new update available! Your currently versiom:" + this.getDescription().getVersion() + "New version:" + version);
-                        getLogger().warning("Download from https://www.spigotmc.org/resources/betterautomessages.110559");
-                    }
-                });
-
-        // Tworzenie asynchronicznego taska, który będzie wysyłał wiadomości co określony czas
-
-
         Bukkit.getScheduler().runTaskTimer(this, bukkitTask -> {
             String message = getNextMessage();
             Bukkit.broadcastMessage(message);
